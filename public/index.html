@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khabari - Dynamic API Integration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">
+                    <i class="fas fa-newspaper"></i>
+                    Khabari
+                </h1>
+                <nav class="nav">
+                    <button class="nav-btn active" data-category="general">General</button>
+                    <button class="nav-btn" data-category="technology">Technology</button>
+                    <button class="nav-btn" data-category="business">Business</button>
+                    <button class="nav-btn" data-category="sports">Sports</button>
+                    <button class="nav-btn" data-category="health">Health</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="hero">
+                <h2 class="hero-title">Stay Updated with Latest News</h2>
+                <p class="hero-subtitle">Real-time news from around the world, dynamically loaded from multiple sources</p>
+            </div>
+
+            <div class="search-section">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search news..." class="search-input">
+                    <button id="searchBtn" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <div class="section-header">
+                    <h3 class="section-title">Latest News</h3>
+                    <div class="refresh-btn" id="refreshBtn">
+                        <i class="fas fa-sync-alt"></i>
+                        Refresh
+                    </div>
+                </div>
+
+                <!-- Loading State -->
+                <div class="loading-container" id="loadingContainer">
+                    <div class="loading-spinner"></div>
+                    <p class="loading-text">Loading latest news...</p>
+                </div>
+
+                <!-- Error State -->
+                <div class="error-container" id="errorContainer" style="display: none;">
+                    <div class="error-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3 class="error-title">Oops! Something went wrong</h3>
+                    <p class="error-message" id="errorMessage">Unable to fetch news. Please try again later.</p>
+                    <button class="retry-btn" id="retryBtn">
+                        <i class="fas fa-redo"></i>
+                        Try Again
+                    </button>
+                </div>
+
+                <!-- News Container -->
+                <div class="news-grid" id="newsContainer">
+                    <!-- News articles will be dynamically inserted here -->
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more-container" id="loadMoreContainer" style="display: none;">
+                    <button class="load-more-btn" id="loadMoreBtn">
+                        Load More Articles
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Khabari. Built with ❤️ & Modern Web Technologies and Real News APIs.</p>
+            <p class="api-credit">Powered by RSS feeds, NewsAPI, and other reliable news sources</p>
+            <p class="creator-credit">Created by <a href="https://instagram.com/therajatdua" target="_blank" class="creator-link">Rajat Dua</a></p>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
