@@ -199,3 +199,5 @@ MIT License - feel free to use this project for learning and development purpose
 #Gallery
 
 https://github.com/rajatxdua/API-INTEGRATION/issues/1#issue-3253828625
+
+https://github.com/rajatxdua/API-INTEGRATION/issues/2#issue-3253833802
