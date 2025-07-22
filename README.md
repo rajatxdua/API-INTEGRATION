@@ -195,3 +195,7 @@ Works flawlessly on all modern browsers including Chrome, Firefox, Safari, and E
 ## 📄 License
 
 MIT License - feel free to use this project for learning and development purposes.
+
+#Gallery
+
+https://github.com/rajatxdua/API-INTEGRATION/issues/1#issue-3253828625
