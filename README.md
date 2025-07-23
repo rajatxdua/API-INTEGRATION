@@ -1,4 +1,4 @@
-# Khabari - Dynamic API Integration
+#API Integration
 
 *COMPANY*: CODTECH IT SOLUTIONS
 
@@ -11,6 +11,8 @@
 *DURATION*: 4 WEEKS
 
 *MENTOR*:  NEELA SANTHOSH
+
+# Khabari -
 
 A comprehensive, responsive news web application that demonstrates real-world API integration using modern web development technologies. This project showcases the ability to fetch, process, and display real-time news data from multiple sources while maintaining exceptional user experience across all devices.
 
